@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="PHPの基礎を学ぼう">
+  <meta name="description" content="PHPの基礎を学ぼう">
   <title>25.5 PHPでAjaxを使ってみよう</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
       };
 
       // サーバー側にAjaxリクエストを送信
-      fetch('ajax_server.php', {
+      fetch('23_ajax_server.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dispData) //JSON形式に変換
@@ -54,3 +54,5 @@
   </script>
 </body>
 </html>
+
+<!-- localhost/php-basic/23_ajax_browser.html -->

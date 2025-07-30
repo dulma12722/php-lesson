@@ -55,8 +55,8 @@
     $auth = new Auth();
 
     // 入力値
-    $auth->$setID($_POST['id']);
-    $auth->$setPass($_POST['pass']);
+    $auth->setID($_POST['id']);
+    $auth->setPass($_POST['pass']);
 
     $auth->checkLogIn();
   }
@@ -72,7 +72,7 @@
 <body>
   <p>ログイン認証機能でPHPのクラスを理解する</p>
 
-  <form method="post" action="./">
+  <form method="post" action="login_auth.php">
     <input type="text" name="id" placeholder="IDを入力してください" style="border:1px #000 solid;padding:10px;">
     <br> 
     <input type="password" name="pass" placeholder="パスを入力してください" style="border:1px #000 solid;padding:10px;">
